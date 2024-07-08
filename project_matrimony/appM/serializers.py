@@ -19,7 +19,7 @@ class RegisterSerializer(serializers.ModelSerializer):
             username=validated_data['username'],
             password=password,
             email=validated_data['email'],
-            first_name=validated_data.get('first_name', ''),
+            first_name=validated_data.get('first name', ''),
             phone=validated_data.get('phone', ''),
             address=validated_data.get('address', ''),
             country=validated_data.get('country', ''),
