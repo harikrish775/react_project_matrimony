@@ -1,0 +1,16 @@
+.logpage {
+    background-color: gray;
+    min-height: 90vh;
+    
+}
+
+.logcard{
+    background-color: bisque;
+    padding: 15px;
+    border-radius: 5px;
+    /* float: right; */
+}
+
+.logcard label{
+    float: left;
+}
