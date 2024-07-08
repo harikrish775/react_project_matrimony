@@ -24,7 +24,7 @@ class RegisterView(generics.CreateAPIView):
         print("Incoming registration data:", request.data)
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        user = serializeer.save()
+        user = serializer.save()
         return Response({
             "user": UserSerializer(user).data,
             "message": "User registered successfully."
