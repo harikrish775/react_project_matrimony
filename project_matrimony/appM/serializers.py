@@ -30,7 +30,7 @@ class RegisterSerializer(serializers.ModelSerializer):
         # Send confirmation email
         send_mail(
             'Registration Confirmation',
-            f'Your registration is succcessful. Your password is {password}.',
+            f'Your registration is successful. Your password is {password}.',
             'hhari9282@gmail.com',  
             [validated_data['email']],
             fail_silently=False,
